@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>CREATE ACCOUNT</title>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Link to use icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+        <a class="navbar-brand" href=" ">
+            Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Registration<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accommodation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Manage
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">
+                            System Manager
+                        </a>
+                        <a class="dropdown-item" href="#">Host</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <border ="1" border color="black" align="center">
+        <align ="center">
+            <h1>CREATE ACCOUNT</h1>
+            <br> <br> <br> <br>
+            <table align="center">
+             <form action="/action_page.php">
+
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" id="fname" placeholder="Enter your first name" required /></td>
+                    <td>Last Name</td>
+                    <td><input type="text" id="lname" placeholder="Enter your last name" required /></td>
+                </tr>
+                <tr>
+                    <td>Email adress</td>
+                    <td><input type="email" id="email" placeholder="Enter email" required /></td>
+                    <td>Mobile</td>
+                    <td><input type="number" id="number" placeholder="Enter your mobile number" required /></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="password" placeholder="Password" pattern="(?=.*[a-z])(?=.*\d)(?=.*[!@#$%])[A-Za-z\d!@#$%].{6,12}" title="Must contain at least one number, one letters and between 6 and 12 characters" required /></td>
+                    <td>Confirm Password</td>
+                    <td><input type="password" id="confirm password" placeholder="Re-type your password" required pattern="(?=.*[a-z])(?=.*\d)(?=.*[!@#$%])[A-Za-z\d!@#$%]." title="Must contain at least one number, one letters and between 6 and 12 characters" required /></td>
+                </tr>
+                <tr>
+                    <td>Adress</td>
+                    <td><input type="text" id="lname" placeholder="address" required /></td>
+                    <td>Country</td>
+                    <td>
+                        <select name="division" id="division" required />
+                            <option value="" hidden disabled selected="selected">Select Country</option>
+                            <option value="Country">Australia</option>
+                            <option value="Country">China</option>
+                            <option value="Country">America</option>
+                            <option value="Country">Japan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ABN</td>
+                    <td><input type="text" id="ABN" placeholder="Enter your ABN Number" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,")'/></td>
+                </tr>
+
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <body style="text-align: center">
+              
+                <button type="button">Cancel</button>
+               <input type="submit" value="Register"/>
+
+
+            </body>
+</html>
